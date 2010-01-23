@@ -164,6 +164,10 @@ public class FighterShip extends StarShip{
 	public void recoverAll() {
 		setShield(getMaxShield());
 	}
-	
+
+	@Override
+	public double getProportionalShield() {
+		return (double)getShield()/(double)getMaxShield();
+	}
 
 }	
