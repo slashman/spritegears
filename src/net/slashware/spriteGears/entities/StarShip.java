@@ -199,5 +199,7 @@ public abstract class StarShip implements ShipEventListener{
 	public abstract int getPrice();
 
 	public abstract void recoverAll();
+
+	public abstract double getProportionalShield();
 	
 }

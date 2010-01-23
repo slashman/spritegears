@@ -194,7 +194,7 @@ public class BattleRules {
 
 	private static int getCatchingOdds(StarShip spriteGear,
 			List<StarShip> surroundingShips) {
-		return 50;
+		return 70 - (int)Math.round(spriteGear.getProportionalShield()*100);
 	}
 
 	public static List<StarShip> getSurroundingEnemyShips(StarShip ship) {
