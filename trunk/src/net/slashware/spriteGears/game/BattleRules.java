@@ -5,6 +5,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
+import net.slashware.spriteGears.entities.AssaultGroup;
 import net.slashware.spriteGears.entities.BattleScenario;
 import net.slashware.spriteGears.entities.Faction;
 import net.slashware.spriteGears.entities.StarShip;
@@ -48,6 +49,7 @@ public class BattleRules {
 			BattleScreen.hideBattleScreen();
 			//Display.si.refresh();
 			//Display.si.waitKey(CharKey.SPACE);
+			restoreAssaultGroup();
 			StarZoneNavi.showStarZoneNavi();
 			return true;
 		} else if (Game.getCurrentGame().getBattleScenario().getEnabledFriendShipsFor(Faction.HUMAN).size() == 0){
@@ -68,6 +70,13 @@ public class BattleRules {
 			return true;
 		}
 		return false;
+	}
+
+	private static void restoreAssaultGroup() {
+		AssaultGroup group = Game.getCurrentGame().getActiveAssaultGroup();
+		for (StarShip ship: group.getEnabledStarShips()){
+			ship.recoverAll();
+		}
 	}
 
 	private static int getPrize() {
