@@ -8,6 +8,7 @@ import java.util.List;
 import net.slashware.spriteGears.entities.AssaultGroup;
 import net.slashware.spriteGears.entities.BattleScenario;
 import net.slashware.spriteGears.entities.Faction;
+import net.slashware.spriteGears.entities.StarSection;
 import net.slashware.spriteGears.entities.StarShip;
 import net.slashware.spriteGears.ui.BattleScreen;
 import net.slashware.spriteGears.ui.Display;
@@ -149,7 +150,7 @@ public class BattleRules {
 		if (surroundingShips.size() < getSurroundingShipsForCatchingSpriteGear()){
 			BattleScreen.addMessage(spriteGear.getDescription()+" breaks free from the energy bound!");
 			BattleScreen.availableOrders = 0;
-			//return;
+			return;
 		}
 		// Calculate the odds of catching the sprite gear
 		int odds = getCatchingOdds(spriteGear, surroundingShips);
@@ -163,6 +164,7 @@ public class BattleRules {
 			BattleScreen.updateShips();
 			BattleScreen.availableOrders = 0;
 			Game.getCurrentGame().getStarExpedition().increaseSpriteGears();
+			destroyBigEnergy();
 			checkGameWin();
 			checkBattleOver();
 		} else {
@@ -171,6 +173,11 @@ public class BattleRules {
 			BattleScreen.availableOrders = 0;
 		}
 		
+	}
+
+	private static void destroyBigEnergy() {
+		Position pos = Game.getCurrentGame().getActiveAssaultGroup().getPosition();
+		Game.getCurrentGame().getStarExpedition().getCurrentZone().setSection(pos.x, pos.y, StarSection.VOID);
 	}
 
 	private static void checkGameWin() {
