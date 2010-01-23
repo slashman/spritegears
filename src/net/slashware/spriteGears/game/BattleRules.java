@@ -54,7 +54,6 @@ public class BattleRules {
 			return true;
 		} else if (Game.getCurrentGame().getBattleScenario().getEnabledFriendShipsFor(Faction.HUMAN).size() == 0){
 			new Thread(new Runnable(){
-				@Override
 				public void run() {
 					BattleScreen.addMessage("You lost... Press Space to Continue");
 					BattleScreen.hideBattleScreen();
@@ -178,7 +177,6 @@ public class BattleRules {
 		
 		if (Game.getCurrentGame().getStarExpedition().getSpriteGears() >= WIN_SPRITEGEARS){
 			new Thread(new Runnable(){
-				@Override
 				public void run() {
 					Display.showWin();
 				}
@@ -192,7 +190,7 @@ public class BattleRules {
 		return 50;
 	}
 
-	private static List<StarShip> getSurroundingEnemyShips(StarShip ship) {
+	public static List<StarShip> getSurroundingEnemyShips(StarShip ship) {
 		List<StarShip> ret = new ArrayList<StarShip>();
 		List<StarShip> enemyShips = Game.getCurrentGame().getBattleScenario().getEnabledEnemyShipsFor(ship.getFaction());
 		for (StarShip enemyShip: enemyShips){
