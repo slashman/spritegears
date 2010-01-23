@@ -1,0 +1,36 @@
+<project name="7zipspriteGears" default="package.7zipexample">
+    <property name="launcher.dir" location="${basedir}/launcher"/> <!-- Location of the JRE, and the temporary 7z file -->
+	<property name="7zip.exe.dir" location="${basedir}/7zip"/><!-- Location of the 7ZIP executable -->
+	<property name="sfx.dir" location="${basedir}/sfx"/> <!-- Location of the SFXs files, used in creation -->
+    <property name="dist.dir" location="${basedir}/7zipDistro"/> <!-- Target for the .exe -->
+    
+    <target name="clean.7zipexample" depends="clean.dist.7zipexample" />
+	
+	<target name="clean.dist.7zipexample">
+      <delete includeemptydirs="true">
+      	<fileset dir="${launcher.dir}" includes="spriteGears.7z" />
+	  	<fileset dir="${dist.dir}" includes="spriteGears.exe" />
+      </delete>
+    </target>
+ 
+    <target name="package.7zipexample" depends="clean.7zipexample">
+    	<!-- compress all of the files we need to down with 7zip -->
+		<exec executable="${7zip.exe.dir}/7z.exe" failonerror="true">
+			<arg value="a" />
+			<arg value="-t7z" />
+			<arg value="-r" />
+			<arg value="${launcher.dir}\spriteGears.7z" />
+			<arg value="${launcher.dir}" />
+		</exec>
+    	
+    	<!-- concat the files we need together to produce a binary
+    			launcher -->
+    	<concat destfile="${dist.dir}/spriteGears.exe" binary="yes">
+			<fileset file="${sfx.dir}/7zSD.sfx" />
+			<fileset file="${sfx.dir}/app.tag" />
+			<fileset file="${launcher.dir}/spriteGears.7z" />
+		</concat>
+    	
+    </target>
+    
+</project>

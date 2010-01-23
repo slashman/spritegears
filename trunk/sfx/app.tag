@@ -1,8 +1,8 @@
 ;!@Install@!UTF-8!
-Title="CastlevaniaRL - Santiago Zapata 2007-2009"
+Title="SpriteGears - Santiago Zapata 2009-2010"
 ExtractDialogText="Loading Temporary Java Virtual Machine..."
 GUIFlags="32"
-ExtractTitle="CastlevaniaRL - BundledJVM Distro"
+ExtractTitle="SpriteGears - BundledJVM Distro"
 FinishMessage="Thank you for playing!"
-RunProgram="launcher\cvrl-bundled.bat"
+RunProgram="launcher\spriteGears.bat"
 ;!@InstallEnd@!
