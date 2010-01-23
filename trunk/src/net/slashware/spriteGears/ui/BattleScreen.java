@@ -181,9 +181,9 @@ public class BattleScreen extends Display{
 	}
 	
 	private static boolean isSurroundedBy(StarShip spriteGear, StarShip ship) {
-		return true;
+		List<StarShip> surroundingShips = BattleRules.getSurroundingEnemyShips(spriteGear);
+		return surroundingShips.contains(ship);
 	}
-	
 
 	private final static Map<String, JMenuItem> menuActions = new HashMap<String, JMenuItem>();
 	static {
