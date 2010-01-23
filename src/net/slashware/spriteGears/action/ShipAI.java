@@ -2,18 +2,15 @@ package net.slashware.spriteGears.action;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Comparator;
 import java.util.List;
 
 import net.slashware.spriteGears.ai.EvaluatedShip;
 import net.slashware.spriteGears.entities.FighterShip;
 import net.slashware.spriteGears.entities.StarShip;
-import net.slashware.spriteGears.game.BattleRules;
 import net.slashware.spriteGears.game.Game;
 import net.slashware.spriteGears.ui.BattleScreen;
 import net.slashware.spriteGears.ui.Display;
 import net.slashware.util.Position;
-import net.slashware.util.Util;
 
 /**
  * Ships do the following:

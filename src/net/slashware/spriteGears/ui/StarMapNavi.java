@@ -14,8 +14,6 @@ import net.slashware.spriteGears.entities.StarExpedition;
 import net.slashware.spriteGears.entities.StarPath;
 import net.slashware.spriteGears.entities.StarZone;
 import net.slashware.spriteGears.game.Game;
-import net.slashware.spriteGears.generators.AssaultGroupGenerator;
-import net.slashware.spriteGears.generators.SimpleZoneMapGenerator;
 import net.slashware.util.ImageUtils;
 import net.slashware.util.sound.SoundManager;
 

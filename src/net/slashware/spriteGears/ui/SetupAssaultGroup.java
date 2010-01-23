@@ -237,6 +237,10 @@ class ShipSelectionListener extends MouseAdapter {
 
 
 class ShipLabel extends JLabel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private StarShip ship;
 	public StarShip getShip() {
 		return ship;

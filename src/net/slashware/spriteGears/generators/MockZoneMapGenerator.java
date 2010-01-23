@@ -4,7 +4,7 @@ import net.slashware.spriteGears.entities.StarSection;
 import net.slashware.spriteGears.entities.StarZone;
 import net.slashware.util.Position;
 
-public class MockZoneMapGenerator implements ZoneMapGenerator{
+public class MockZoneMapGenerator {
 	
 	private final String[] testMap = new String[]{
 		"   E.      ",

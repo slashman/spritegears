@@ -218,6 +218,10 @@ class BuyShipSelectionListener extends MouseAdapter {
 }
 
 class NoBuyShipLabel extends JLabel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private StarShip ship;
 	public StarShip getShip() {
 		return ship;
@@ -234,6 +238,11 @@ class NoBuyShipLabel extends JLabel{
 }
 
 class BuyShipLabel extends NoBuyShipLabel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	BuyShipLabel (StarShip ship){
 		super (ship);
 		setText(ship.getDescription()+"("+ship.getPrice()+")");

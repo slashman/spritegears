@@ -159,7 +159,6 @@ public class BasicComputerAI {
 	
 	private void moveRandomly(StarShip chosenShip) {
 		// Get a valid movement in the grid
-		@SuppressWarnings("unused")
 		Position random = (Position)Util.randomElementOf(chosenShip.getMovementMask());
 		BattleRules.setPosition(chosenShip, chosenShip.getPosition().x + random.x, chosenShip.getPosition().y + random.y);
 	}

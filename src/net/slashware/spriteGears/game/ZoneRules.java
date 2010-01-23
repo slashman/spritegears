@@ -11,7 +11,6 @@ import net.slashware.spriteGears.ui.BuyShips;
 import net.slashware.spriteGears.ui.Display;
 import net.slashware.spriteGears.ui.StarMapNavi;
 import net.slashware.util.Position;
-import net.slashware.util.Util;
 
 public class ZoneRules {
 	public static void landOn(int x, int y){

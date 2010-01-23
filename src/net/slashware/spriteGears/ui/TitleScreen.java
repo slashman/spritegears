@@ -4,24 +4,19 @@ import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.image.BufferedImage;
-import java.awt.image.TileObserver;
 import java.io.IOException;
 
 import net.slashware.spriteGears.Run;
-import net.slashware.util.CharKey;
 import net.slashware.util.PropertyFilters;
-import net.slashware.util.sound.JLayerMP3Player;
 import net.slashware.util.sound.SoundManager;
 
 public class TitleScreen extends Display {
 	private static String IMG_TITLE;  
-	private static BufferedImage IMG_PICKER;
 	static MouseListener listener;
 	static {
 		try {
 			IMG_TITLE = "img/guy2.png";
-			IMG_PICKER = PropertyFilters.getImage("img/spriteGears2x.gif", "0,0,52,36");
+			PropertyFilters.getImage("img/spriteGears2x.gif", "0,0,52,36");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

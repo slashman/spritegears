@@ -5,7 +5,6 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import net.slashware.spriteGears.action.ActionSelector;
 import net.slashware.spriteGears.entities.BattleScenario;
 import net.slashware.spriteGears.entities.Faction;
 import net.slashware.spriteGears.entities.StarShip;

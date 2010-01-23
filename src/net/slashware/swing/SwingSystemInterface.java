@@ -4,17 +4,13 @@ import java.awt.Color;
 import java.awt.Component;
 import java.awt.Cursor;
 import java.awt.Dimension;
-import java.awt.DisplayMode;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.Point;
 import java.awt.Toolkit;
-import java.awt.Window;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
@@ -22,21 +18,15 @@ import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
 import java.util.Hashtable;
 
-import javax.imageio.ImageIO;
 import javax.swing.JFrame;
-import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPopupMenu;
-import javax.swing.JTextArea;
-import javax.swing.border.Border;
 import javax.swing.border.LineBorder;
 
 import net.slashware.util.CharKey;
 import net.slashware.util.ImageUtils;
 import net.slashware.util.Position;
-
-import java.awt.Frame;
 
 public class SwingSystemInterface implements Runnable{ 
 	public void run(){
@@ -44,7 +34,7 @@ public class SwingSystemInterface implements Runnable{
 	private SwingInterfacePanel sip;
 	private StrokeNClickInformer aStrokeInformer;
 	private Position caretPosition = new Position(0,0);
-	private Hashtable images = new Hashtable();
+	private Hashtable<String, Image> images = new Hashtable<String, Image>();
 	
 	//private JTextArea invTextArea;
 	private JFrame frameMain;
@@ -425,6 +415,10 @@ public class SwingSystemInterface implements Runnable{
 }
 
 class SwingInterfacePanel extends JPanel{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Image bufferImage;
 	private Graphics bufferGraphics;
 	
@@ -434,7 +428,6 @@ class SwingInterfacePanel extends JPanel{
 	private Image[] backImageBuffers;
 	private Graphics[] backGraphicsBuffers;
 	
-	private Color color;
 	private Font font;
 	
 	public void cls(){
@@ -445,7 +438,6 @@ class SwingInterfacePanel extends JPanel{
 	}
 	
 	public void setColor(Color color){
-		this.color = color;
 		bufferGraphics.setColor(color);
 	}
 	
