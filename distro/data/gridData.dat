@@ -1,0 +1,535 @@
+Mantis
+fireMask
+xxx
+-x-
+-@-
+movementMask
+xxx
+-@-
+-x-
+endShip
+
+Wraith
+fireMask
+xxx
+-x-
+-@-
+movementMask
+xxx
+xxx
+-@-
+endShip
+
+Crab
+fireMask
+xxx
+xxx
+xxx
+-@-
+movementMask
+-x-
+xxx
+-@-
+endShip
+
+Firefly
+fireMask
+xxx
+-x-
+-x-
+-@-
+movementMask
+xxx
+x@x
+xxx
+endShip
+
+Shock
+fireMask
+xxx
+x@x
+movementMask
+xxx
+x@x
+xxx
+endShip
+
+Bugg
+fireMask
+xxx
+x@x
+xxx
+movementMask
+xxx
+x@x
+xxx
+endShip
+
+Gamma
+fireMask
+xxx
+-x-
+-@-
+movementMask
+xxx
+-@-
+-x-
+endShip
+
+Drake
+fireMask
+xxx
+-x-
+-@-
+movementMask
+xxx
+xxx
+-@-
+endShip
+
+Piranha
+fireMask
+xxx
+xxx
+xxx
+-@-
+movementMask
+-x-
+xxx
+-@-
+endShip
+
+Bee
+fireMask
+xxx
+-x-
+-x-
+-@-
+movementMask
+xxx
+x@x
+xxx
+endShip
+
+Cocoon
+fireMask
+xxx
+x@x
+movementMask
+xxx
+x@x
+xxx
+endShip
+
+Aeris
+fireMask
+xxx
+x@x
+xxx
+movementMask
+xxx
+x@x
+xxx
+endShip
+
+Tank
+fireMask
+-x-
+xxx
+xxx
+-@-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Bolt
+fireMask
+xxx
+-x-
+xxx
+-@-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Angel
+fireMask
+-x-
+-x-
+xxx
+x@x
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Blaster
+fireMask
+xxx
+x-x
+x-x
+x@x
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Scorpion
+fireMask
+xxx
+xxx
+-@-
+xxx
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Octo
+fireMask
+x-x-x
+-xxx-
+xx@xx
+-xxx-
+x-x-x
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Screw
+fireMask
+xxx
+xxx
+xxx
+xxx
+-@-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Manta
+fireMask
+--x--
+-xxx-
+xxxxx
+xx@xx
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Chill
+fireMask
+xxx
+xxx
+xxx
+xxx
+-@-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Phantom
+fireMask
+xxx
+xxx
+x@x
+xxx
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Twin
+fireMask
+xx-xx
+xx-xx
+-xxx-
+-x@x-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Hope
+fireMask
+-x-
+xxx
+xxx
+xxx
+xxx
+-@-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Skeletor
+fireMask
+xxx
+-x-
+xxx
+-x-
+xxx
+-@-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Krepola
+fireMask
+xxx
+xxx
+xxx
+x@x
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Nayna
+fireMask
+---x---
+--xxx--
+--xxx--
+xx-@-xx
+xxxxxxx
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Archer
+fireMask
+-xxx-
+xx-xx
+xx-xx
+xx-xx
+-x@x-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Thunder
+fireMask
+xxx
+xxx
+xxx
+-x-
+-x-
+-@-
+movementMask
+-x-
+xxx
+x@x
+xxx
+endShip
+
+Fiery
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Rose
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Natura
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Alyaredon
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Vyrna
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Aurora
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Dragon
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Knight
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Imperia
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
+
+Valar
+fireMask
+   xxx  
+  xx xx 
+ xxxxxxx
+ x x@x x
+ xxxxxxx
+  xx xx 
+   xxx  
+movementMask
+  x  
+ xxx 
+xx@xx
+ xxx 
+  x  
+endShip
