@@ -159,5 +159,11 @@ public class FighterShip extends StarShip{
 	public int getPrice() {
 		return price;
 	}
+	
+	@Override
+	public void recoverAll() {
+		setShield(getMaxShield());
+	}
+	
 
 }	
