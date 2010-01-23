@@ -196,7 +196,7 @@ public class BattleRules {
 		List<StarShip> ret = new ArrayList<StarShip>();
 		List<StarShip> enemyShips = Game.getCurrentGame().getBattleScenario().getEnabledEnemyShipsFor(ship.getFaction());
 		for (StarShip enemyShip: enemyShips){
-			if (Math.abs(enemyShip.getPosition().x - ship.getPosition().x) <= 1 ||
+			if (Math.abs(enemyShip.getPosition().x - ship.getPosition().x) <= 1 &&
 				Math.abs(enemyShip.getPosition().y - ship.getPosition().y) <= 1)
 				ret.add(enemyShip);
 		}
