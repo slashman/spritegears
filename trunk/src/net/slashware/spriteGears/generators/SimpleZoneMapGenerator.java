@@ -109,7 +109,7 @@ public class SimpleZoneMapGenerator {
 		}
 		
 		// Random voids
-		int randomVoids = Util.rand(5, 25);
+		int randomVoids = Util.rand(5, 15-difficulty);
 		int failSafe = 0;
 		for (int i = 0; i < randomVoids; i++){
 			failSafe++;
