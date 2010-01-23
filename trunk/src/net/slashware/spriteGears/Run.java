@@ -38,7 +38,7 @@ public class Run {
 	}
 	
 	public static String getVersion(){
-		return "0.2";
+		return "0.3";
 	}
 
 }
