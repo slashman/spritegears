@@ -87,9 +87,6 @@ public class BattleScenario implements ShipEventListener {
 	}
 
 	public void changeGroup(StarShip ship, Faction faction) {
-		AssaultGroup target = null;
-		AssaultGroup source = null;
-		//
 		// TODO Auto-generated method stub
 		for (AssaultGroup group: assaultGroups){
 			if (group.getEnabledStarShips().contains(ship)){
