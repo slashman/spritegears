@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Created-By: (Slash)
+Main-Class: net.slashware.spriteGears.Run
+Class-Path: lib/jl1.0.jar
+
